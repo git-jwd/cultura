@@ -1,169 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
 
 body {
-  max-width: 320px;
-  height: 100vh;
-  overflow-x: hidden;
-
+  max-width: 100%;
   background-color: ghostwhite;
-  /* HIDDEN MENU */
-  /*
-            * Just a quick hamburger
-            */
-  /* 
-            * Transform all the slices of hamburger
-            * into a crossmark.
-            */
-  /*
-            * But let's hide the middle one.
-            */
-  /*
-            * Ohyeah and the last one should go the other direction
-            */
-  /*
-            * Make this absolute positioned
-            * at the top left of the screen
-            */
-  /*
-            * And let's slide it in from the left
-            */
-}
+  }
 
-heading nav {
-  position: absolute;
-  top: 0;
-}
 
 #logo-container {
-  width: 100vh;
-  
-}
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+ }
 
-heading img {
-  width: 50%;
-  display: block;
+img {
+  width: 100%;
   margin: 0 auto;
  
 }
 
 #main-img {
-  width: 100vh;
+  width: 100%;
   margin-top: 30px;
 
-  
-  
- 
 }
-
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 25px;
-  left: 10px;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-}
-
-#menuToggle p {
-  color: limegreen;
-}
-
-#menuToggle input {
-  display: block;
-  width: 50px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none;
-}
-
-
-
-/*#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: limegreen;
-  border-radius: 3px;
-  z-index: 1;
-  -webkit-transform-origin: 4px 0;
-          transform-origin: 4px 0;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-#menuToggle span:first-child {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}*/
-
-/*#menuToggle input:checked ~ span {
-  opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: limegreen;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-          transform: rotate(-45deg) translate(0, -1px);
-}*/
 
 #menu {
-  position: absolute;
-  overflow-x: hidden;
-  width: 100vh;
-  height: 60px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  
-  background: #fff;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  display: block;
+  width: 90%;
+  margin: 0 auto -20px auto;
+
+  border: 1px solid red;
+
 }
 
 #menu li {
   
-  font-size: 15px;
+  font-size: 20px;
+  width: 23%; 
   display: inline-block;
-  width: 15vh;
-  
-
+  margin: 0 auto;
+  text-align: center;
 }
+
 
 #menu li a {
   text-decoration: none;
@@ -176,26 +57,18 @@ heading img {
  opacity: .4;
 }
 
-#menu a {
-  color: brown;
-  text-decoration: none;
-}
-
-#menuToggle input:checked ~ ul {
-  -webkit-transform: none;
-          transform: none;
-}
 
 #art-collection {
-  width: 100vh;
+  width: 100%;
   display: block;
   
 }
 
 #art-collection .art-pieces {
-  width: 22%;
-  height: 100px;
-  display: inline-block;
+  width: 102px;
+  height: 102px;
+ 
+  
   padding: 10px;
   cursor: pointer;
 }
@@ -207,14 +80,41 @@ heading img {
 
 #art-collection .art-pieces:nth-child(4n + 4) {
   padding-right: 0;
-  margin-right: 0;
+  
   
 }
 
 
 
 #artist-pic {
-  width: 40%;
+  text-align: center;
+  margin: 25px auto;
   display: block;
-  margin: 50px auto;
+  width: 40%;
 }
+
+#artist-bio {
+  width: 100%;
+}
+
+
+#duchenne-links {
+  list-style-type: none;
+
+}
+
+#duchenne-links a {
+  text-decoration: none;
+}
+
+
+
+footer {
+ position: relative;
+ bottom: 0;
+ width: 100%;
+ text-align: center;
+}
+
+  
+  
